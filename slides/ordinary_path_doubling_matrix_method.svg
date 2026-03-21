@@ -1,0 +1,402 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .title { font: 700 42px 'Helvetica Neue', Arial, sans-serif; fill: #111827; }
+      .subtitle { font: 400 23px 'Helvetica Neue', Arial, sans-serif; fill: #334155; }
+      .section { font: 700 24px 'Helvetica Neue', Arial, sans-serif; fill: #111827; }
+      .body { font: 400 20px 'Helvetica Neue', Arial, sans-serif; fill: #1f2937; }
+      .small { font: 400 17px 'Helvetica Neue', Arial, sans-serif; fill: #475569; }
+      .matrixLabel { font: 700 24px 'Helvetica Neue', Arial, sans-serif; fill: #111827; }
+      .axisLabel { font: 700 15px 'Helvetica Neue', Arial, sans-serif; fill: #334155; }
+      .cellTextDark { font: 700 13px 'Helvetica Neue', Arial, sans-serif; fill: #ffffff; }
+      .cellTextLight { font: 700 13px 'Helvetica Neue', Arial, sans-serif; fill: #0f172a; }
+    </style>
+    <marker id="arrow-gray" markerWidth="10" markerHeight="10" refX="8.2" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-teal" markerWidth="10" markerHeight="10" refX="8.2" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="10" refX="8.2" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b45309"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+
+  <text x="90" y="88" class="title">Ordinary path-doubling by Boolean matrix multiplication</text>
+  <text x="90" y="124" class="subtitle">Illustrative dense all-pairs transitive-closure baseline: repeated squaring reveals longer and longer paths.</text>
+
+  <rect x="70" y="165" width="610" height="800" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="105" y="212" class="section">Dense example graph</text>
+  <text x="105" y="242" class="small">8 vertices, diagonal entries later set to 1 in the matrix.</text>
+
+  <path d="M 160 340 C 205 348, 205 390, 160 398" fill="none" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <path d="M 160 398 C 115 390, 115 348, 160 340" fill="none" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <line x1="160" y1="340" x2="305" y2="340" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <line x1="160" y1="340" x2="305" y2="398" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <line x1="160" y1="398" x2="305" y2="340" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <line x1="160" y1="398" x2="305" y2="398" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+
+  <path d="M 305 340 C 350 348, 350 390, 305 398" fill="none" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <path d="M 305 398 C 260 390, 260 348, 305 340" fill="none" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <line x1="305" y1="340" x2="450" y2="340" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <line x1="305" y1="340" x2="450" y2="398" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <line x1="305" y1="398" x2="450" y2="340" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <line x1="305" y1="398" x2="450" y2="398" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+
+  <path d="M 450 340 C 495 348, 495 390, 450 398" fill="none" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <path d="M 450 398 C 405 390, 405 348, 450 340" fill="none" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <line x1="450" y1="340" x2="595" y2="340" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <line x1="450" y1="340" x2="595" y2="398" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <line x1="450" y1="398" x2="595" y2="340" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+  <line x1="450" y1="398" x2="595" y2="398" stroke="#64748b" stroke-width="3.2" marker-end="url(#arrow-gray)"/>
+
+  <path d="M 160 340 C 240 252, 360 252, 450 340" fill="none" stroke="#0f766e" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-teal)"/>
+  <path d="M 305 340 C 385 252, 510 252, 595 340" fill="none" stroke="#0f766e" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-teal)"/>
+  <path d="M 160 398 C 285 510, 470 510, 595 398" fill="none" stroke="#b45309" stroke-width="4" stroke-dasharray="12 9" marker-end="url(#arrow-orange)"/>
+
+  <circle cx="160" cy="340" r="31" fill="#1f2937" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="160" cy="398" r="31" fill="#1f2937" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="305" cy="340" r="31" fill="#1f2937" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="305" cy="398" r="31" fill="#1f2937" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="450" cy="340" r="31" fill="#1f2937" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="450" cy="398" r="31" fill="#1f2937" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="595" cy="340" r="31" fill="#1f2937" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="595" cy="398" r="31" fill="#1f2937" stroke="#ffffff" stroke-width="3"/>
+
+  <text x="160" y="348" text-anchor="middle" class="body" style="fill:#ffffff;font-weight:700">A</text>
+  <text x="160" y="406" text-anchor="middle" class="body" style="fill:#ffffff;font-weight:700">B</text>
+  <text x="305" y="348" text-anchor="middle" class="body" style="fill:#ffffff;font-weight:700">C</text>
+  <text x="305" y="406" text-anchor="middle" class="body" style="fill:#ffffff;font-weight:700">D</text>
+  <text x="450" y="348" text-anchor="middle" class="body" style="fill:#ffffff;font-weight:700">E</text>
+  <text x="450" y="406" text-anchor="middle" class="body" style="fill:#ffffff;font-weight:700">F</text>
+  <text x="595" y="348" text-anchor="middle" class="body" style="fill:#ffffff;font-weight:700">G</text>
+  <text x="595" y="406" text-anchor="middle" class="body" style="fill:#ffffff;font-weight:700">H</text>
+
+  <text x="160" y="286" text-anchor="middle" class="small">layer 1</text>
+  <text x="305" y="286" text-anchor="middle" class="small">layer 2</text>
+  <text x="450" y="286" text-anchor="middle" class="small">layer 3</text>
+  <text x="595" y="286" text-anchor="middle" class="small">layer 4</text>
+
+  <text x="146" y="495" class="small">Examples of newly discovered reachability:</text>
+  <line x1="150" y1="534" x2="228" y2="534" stroke="#64748b" stroke-width="3.5" marker-end="url(#arrow-gray)"/>
+  <text x="247" y="540" class="small">solid: original edges in A</text>
+  <line x1="150" y1="578" x2="228" y2="578" stroke="#0f766e" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-teal)"/>
+  <text x="247" y="584" class="small">teal dashed: appears in A^2 (up to 2-step paths)</text>
+  <line x1="150" y1="622" x2="228" y2="622" stroke="#b45309" stroke-width="4" stroke-dasharray="12 9" marker-end="url(#arrow-orange)"/>
+  <text x="247" y="628" class="small">orange dashed: appears in A^4 (up to 4-step paths)</text>
+
+  <text x="146" y="694" class="body">A -> E and C -> G are not edges, but they appear after squaring.</text>
+  <text x="146" y="728" class="body">B -> H needs three hops, so it first appears in A^4.</text>
+
+  <rect x="730" y="165" width="1120" height="530" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="765" y="212" class="section">Repeated Boolean matrix squaring</text>
+  <text x="765" y="242" class="small">Rows and columns use the same vertex order A, B, C, D, E, F, G, H. Diagonal entries are 1.</text>
+
+  <text x="828" y="290" class="matrixLabel">A</text>
+  <text x="1188" y="290" class="matrixLabel">A^2</text>
+  <text x="1548" y="290" class="matrixLabel">A^4</text>
+
+  <text x="808" y="320" class="small">direct edges</text>
+  <text x="1154" y="320" class="small">adds 2-step reachability</text>
+  <text x="1514" y="320" class="small">adds 3- and 4-step reachability</text>
+
+  <path d="M 1040 415 L 1100 415" fill="none" stroke="#64748b" stroke-width="3.5" marker-end="url(#arrow-gray)"/>
+  <text x="1070" y="390" text-anchor="middle" class="small">Boolean square</text>
+  <path d="M 1400 415 L 1460 415" fill="none" stroke="#64748b" stroke-width="3.5" marker-end="url(#arrow-gray)"/>
+  <text x="1430" y="390" text-anchor="middle" class="small">Boolean square</text>
+
+  <text x="782" y="345" class="axisLabel">A</text>
+  <text x="804" y="345" class="axisLabel">B</text>
+  <text x="826" y="345" class="axisLabel">C</text>
+  <text x="848" y="345" class="axisLabel">D</text>
+  <text x="870" y="345" class="axisLabel">E</text>
+  <text x="892" y="345" class="axisLabel">F</text>
+  <text x="914" y="345" class="axisLabel">G</text>
+  <text x="936" y="345" class="axisLabel">H</text>
+  <text x="760" y="366" class="axisLabel">A</text>
+  <text x="760" y="388" class="axisLabel">B</text>
+  <text x="760" y="410" class="axisLabel">C</text>
+  <text x="760" y="432" class="axisLabel">D</text>
+  <text x="760" y="454" class="axisLabel">E</text>
+  <text x="760" y="476" class="axisLabel">F</text>
+  <text x="760" y="498" class="axisLabel">G</text>
+  <text x="760" y="520" class="axisLabel">H</text>
+
+  <text x="1142" y="345" class="axisLabel">A</text>
+  <text x="1164" y="345" class="axisLabel">B</text>
+  <text x="1186" y="345" class="axisLabel">C</text>
+  <text x="1208" y="345" class="axisLabel">D</text>
+  <text x="1230" y="345" class="axisLabel">E</text>
+  <text x="1252" y="345" class="axisLabel">F</text>
+  <text x="1274" y="345" class="axisLabel">G</text>
+  <text x="1296" y="345" class="axisLabel">H</text>
+  <text x="1120" y="366" class="axisLabel">A</text>
+  <text x="1120" y="388" class="axisLabel">B</text>
+  <text x="1120" y="410" class="axisLabel">C</text>
+  <text x="1120" y="432" class="axisLabel">D</text>
+  <text x="1120" y="454" class="axisLabel">E</text>
+  <text x="1120" y="476" class="axisLabel">F</text>
+  <text x="1120" y="498" class="axisLabel">G</text>
+  <text x="1120" y="520" class="axisLabel">H</text>
+
+  <text x="1502" y="345" class="axisLabel">A</text>
+  <text x="1524" y="345" class="axisLabel">B</text>
+  <text x="1546" y="345" class="axisLabel">C</text>
+  <text x="1568" y="345" class="axisLabel">D</text>
+  <text x="1590" y="345" class="axisLabel">E</text>
+  <text x="1612" y="345" class="axisLabel">F</text>
+  <text x="1634" y="345" class="axisLabel">G</text>
+  <text x="1656" y="345" class="axisLabel">H</text>
+  <text x="1480" y="366" class="axisLabel">A</text>
+  <text x="1480" y="388" class="axisLabel">B</text>
+  <text x="1480" y="410" class="axisLabel">C</text>
+  <text x="1480" y="432" class="axisLabel">D</text>
+  <text x="1480" y="454" class="axisLabel">E</text>
+  <text x="1480" y="476" class="axisLabel">F</text>
+  <text x="1480" y="498" class="axisLabel">G</text>
+  <text x="1480" y="520" class="axisLabel">H</text>
+
+  <g id="matrix-a" transform="translate(780,355)">
+    <rect x="0" y="0" width="176" height="176" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+    <path d="M 22 0 V 176 M 44 0 V 176 M 66 0 V 176 M 88 0 V 176 M 110 0 V 176 M 132 0 V 176 M 154 0 V 176" stroke="#cbd5e1" stroke-width="1"/>
+    <path d="M 0 22 H 176 M 0 44 H 176 M 0 66 H 176 M 0 88 H 176 M 0 110 H 176 M 0 132 H 176 M 0 154 H 176" stroke="#cbd5e1" stroke-width="1"/>
+
+    <rect x="0" y="0" width="22" height="22" fill="#111827"/><text x="11" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="22" y="0" width="22" height="22" fill="#111827"/><text x="33" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="44" y="0" width="22" height="22" fill="#111827"/><text x="55" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="66" y="0" width="22" height="22" fill="#111827"/><text x="77" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <text x="99" y="15" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="121" y="15" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="143" y="15" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="165" y="15" text-anchor="middle" class="cellTextLight">0</text>
+
+    <rect x="0" y="22" width="22" height="22" fill="#111827"/><text x="11" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="22" y="22" width="22" height="22" fill="#111827"/><text x="33" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="44" y="22" width="22" height="22" fill="#111827"/><text x="55" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="66" y="22" width="22" height="22" fill="#111827"/><text x="77" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <text x="99" y="37" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="121" y="37" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="143" y="37" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="165" y="37" text-anchor="middle" class="cellTextLight">0</text>
+
+    <text x="11" y="59" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="59" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="44" y="44" width="22" height="22" fill="#111827"/><text x="55" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="66" y="44" width="22" height="22" fill="#111827"/><text x="77" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="88" y="44" width="22" height="22" fill="#111827"/><text x="99" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="44" width="22" height="22" fill="#111827"/><text x="121" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <text x="143" y="59" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="165" y="59" text-anchor="middle" class="cellTextLight">0</text>
+
+    <text x="11" y="81" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="81" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="44" y="66" width="22" height="22" fill="#111827"/><text x="55" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="66" y="66" width="22" height="22" fill="#111827"/><text x="77" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="88" y="66" width="22" height="22" fill="#111827"/><text x="99" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="66" width="22" height="22" fill="#111827"/><text x="121" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <text x="143" y="81" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="165" y="81" text-anchor="middle" class="cellTextLight">0</text>
+
+    <text x="11" y="103" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="103" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="55" y="103" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="77" y="103" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="88" y="88" width="22" height="22" fill="#111827"/><text x="99" y="103" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="88" width="22" height="22" fill="#111827"/><text x="121" y="103" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="132" y="88" width="22" height="22" fill="#111827"/><text x="143" y="103" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="88" width="22" height="22" fill="#111827"/><text x="165" y="103" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="125" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="125" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="55" y="125" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="77" y="125" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="88" y="110" width="22" height="22" fill="#111827"/><text x="99" y="125" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="110" width="22" height="22" fill="#111827"/><text x="121" y="125" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="132" y="110" width="22" height="22" fill="#111827"/><text x="143" y="125" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="110" width="22" height="22" fill="#111827"/><text x="165" y="125" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="55" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="77" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="99" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="121" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="132" y="132" width="22" height="22" fill="#111827"/><text x="143" y="147" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="132" width="22" height="22" fill="#111827"/><text x="165" y="147" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="55" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="77" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="99" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="121" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="132" y="154" width="22" height="22" fill="#111827"/><text x="143" y="169" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="154" width="22" height="22" fill="#111827"/><text x="165" y="169" text-anchor="middle" class="cellTextDark">1</text>
+  </g>
+
+  <g id="matrix-a2" transform="translate(1140,355)">
+    <rect x="0" y="0" width="176" height="176" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+    <path d="M 22 0 V 176 M 44 0 V 176 M 66 0 V 176 M 88 0 V 176 M 110 0 V 176 M 132 0 V 176 M 154 0 V 176" stroke="#cbd5e1" stroke-width="1"/>
+    <path d="M 0 22 H 176 M 0 44 H 176 M 0 66 H 176 M 0 88 H 176 M 0 110 H 176 M 0 132 H 176 M 0 154 H 176" stroke="#cbd5e1" stroke-width="1"/>
+
+    <rect x="0" y="0" width="22" height="22" fill="#111827"/><text x="11" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="22" y="0" width="22" height="22" fill="#111827"/><text x="33" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="44" y="0" width="22" height="22" fill="#111827"/><text x="55" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="66" y="0" width="22" height="22" fill="#111827"/><text x="77" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="88" y="0" width="22" height="22" fill="#0f766e"/><text x="99" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="0" width="22" height="22" fill="#0f766e"/><text x="121" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <text x="143" y="15" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="165" y="15" text-anchor="middle" class="cellTextLight">0</text>
+
+    <rect x="0" y="22" width="22" height="22" fill="#111827"/><text x="11" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="22" y="22" width="22" height="22" fill="#111827"/><text x="33" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="44" y="22" width="22" height="22" fill="#111827"/><text x="55" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="66" y="22" width="22" height="22" fill="#111827"/><text x="77" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="88" y="22" width="22" height="22" fill="#0f766e"/><text x="99" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="22" width="22" height="22" fill="#0f766e"/><text x="121" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <text x="143" y="37" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="165" y="37" text-anchor="middle" class="cellTextLight">0</text>
+
+    <text x="11" y="59" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="59" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="44" y="44" width="22" height="22" fill="#111827"/><text x="55" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="66" y="44" width="22" height="22" fill="#111827"/><text x="77" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="88" y="44" width="22" height="22" fill="#111827"/><text x="99" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="44" width="22" height="22" fill="#111827"/><text x="121" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="132" y="44" width="22" height="22" fill="#0f766e"/><text x="143" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="44" width="22" height="22" fill="#0f766e"/><text x="165" y="59" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="81" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="81" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="44" y="66" width="22" height="22" fill="#111827"/><text x="55" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="66" y="66" width="22" height="22" fill="#111827"/><text x="77" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="88" y="66" width="22" height="22" fill="#111827"/><text x="99" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="66" width="22" height="22" fill="#111827"/><text x="121" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="132" y="66" width="22" height="22" fill="#0f766e"/><text x="143" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="66" width="22" height="22" fill="#0f766e"/><text x="165" y="81" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="103" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="103" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="55" y="103" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="77" y="103" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="88" y="88" width="22" height="22" fill="#111827"/><text x="99" y="103" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="88" width="22" height="22" fill="#111827"/><text x="121" y="103" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="132" y="88" width="22" height="22" fill="#111827"/><text x="143" y="103" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="88" width="22" height="22" fill="#111827"/><text x="165" y="103" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="125" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="125" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="55" y="125" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="77" y="125" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="88" y="110" width="22" height="22" fill="#111827"/><text x="99" y="125" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="110" width="22" height="22" fill="#111827"/><text x="121" y="125" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="132" y="110" width="22" height="22" fill="#111827"/><text x="143" y="125" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="110" width="22" height="22" fill="#111827"/><text x="165" y="125" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="55" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="77" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="99" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="121" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="132" y="132" width="22" height="22" fill="#111827"/><text x="143" y="147" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="132" width="22" height="22" fill="#111827"/><text x="165" y="147" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="55" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="77" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="99" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="121" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="132" y="154" width="22" height="22" fill="#111827"/><text x="143" y="169" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="154" width="22" height="22" fill="#111827"/><text x="165" y="169" text-anchor="middle" class="cellTextDark">1</text>
+  </g>
+
+  <g id="matrix-a4" transform="translate(1500,355)">
+    <rect x="0" y="0" width="176" height="176" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+    <path d="M 22 0 V 176 M 44 0 V 176 M 66 0 V 176 M 88 0 V 176 M 110 0 V 176 M 132 0 V 176 M 154 0 V 176" stroke="#cbd5e1" stroke-width="1"/>
+    <path d="M 0 22 H 176 M 0 44 H 176 M 0 66 H 176 M 0 88 H 176 M 0 110 H 176 M 0 132 H 176 M 0 154 H 176" stroke="#cbd5e1" stroke-width="1"/>
+
+    <rect x="0" y="0" width="22" height="22" fill="#111827"/><text x="11" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="22" y="0" width="22" height="22" fill="#111827"/><text x="33" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="44" y="0" width="22" height="22" fill="#111827"/><text x="55" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="66" y="0" width="22" height="22" fill="#111827"/><text x="77" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="88" y="0" width="22" height="22" fill="#111827"/><text x="99" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="0" width="22" height="22" fill="#111827"/><text x="121" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="132" y="0" width="22" height="22" fill="#b45309"/><text x="143" y="15" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="0" width="22" height="22" fill="#b45309"/><text x="165" y="15" text-anchor="middle" class="cellTextDark">1</text>
+
+    <rect x="0" y="22" width="22" height="22" fill="#111827"/><text x="11" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="22" y="22" width="22" height="22" fill="#111827"/><text x="33" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="44" y="22" width="22" height="22" fill="#111827"/><text x="55" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="66" y="22" width="22" height="22" fill="#111827"/><text x="77" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="88" y="22" width="22" height="22" fill="#111827"/><text x="99" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="22" width="22" height="22" fill="#111827"/><text x="121" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="132" y="22" width="22" height="22" fill="#b45309"/><text x="143" y="37" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="22" width="22" height="22" fill="#b45309"/><text x="165" y="37" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="59" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="59" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="44" y="44" width="22" height="22" fill="#111827"/><text x="55" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="66" y="44" width="22" height="22" fill="#111827"/><text x="77" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="88" y="44" width="22" height="22" fill="#111827"/><text x="99" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="44" width="22" height="22" fill="#111827"/><text x="121" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="132" y="44" width="22" height="22" fill="#111827"/><text x="143" y="59" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="44" width="22" height="22" fill="#111827"/><text x="165" y="59" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="81" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="81" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="44" y="66" width="22" height="22" fill="#111827"/><text x="55" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="66" y="66" width="22" height="22" fill="#111827"/><text x="77" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="88" y="66" width="22" height="22" fill="#111827"/><text x="99" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="66" width="22" height="22" fill="#111827"/><text x="121" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="132" y="66" width="22" height="22" fill="#111827"/><text x="143" y="81" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="66" width="22" height="22" fill="#111827"/><text x="165" y="81" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="103" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="103" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="55" y="103" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="77" y="103" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="88" y="88" width="22" height="22" fill="#111827"/><text x="99" y="103" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="88" width="22" height="22" fill="#111827"/><text x="121" y="103" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="132" y="88" width="22" height="22" fill="#111827"/><text x="143" y="103" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="88" width="22" height="22" fill="#111827"/><text x="165" y="103" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="125" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="125" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="55" y="125" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="77" y="125" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="88" y="110" width="22" height="22" fill="#111827"/><text x="99" y="125" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="110" y="110" width="22" height="22" fill="#111827"/><text x="121" y="125" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="132" y="110" width="22" height="22" fill="#111827"/><text x="143" y="125" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="110" width="22" height="22" fill="#111827"/><text x="165" y="125" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="55" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="77" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="99" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="121" y="147" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="132" y="132" width="22" height="22" fill="#111827"/><text x="143" y="147" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="132" width="22" height="22" fill="#111827"/><text x="165" y="147" text-anchor="middle" class="cellTextDark">1</text>
+
+    <text x="11" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="33" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="55" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="77" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="99" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <text x="121" y="169" text-anchor="middle" class="cellTextLight">0</text>
+    <rect x="132" y="154" width="22" height="22" fill="#111827"/><text x="143" y="169" text-anchor="middle" class="cellTextDark">1</text>
+    <rect x="154" y="154" width="22" height="22" fill="#111827"/><text x="165" y="169" text-anchor="middle" class="cellTextDark">1</text>
+  </g>
+
+  <rect x="730" y="730" width="1120" height="235" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="765" y="777" class="section">Asymptotic takeaway for the dense-graph baseline</text>
+  <text x="765" y="824" class="body">Parallel depth: O(log^2 n)</text>
+  <text x="1180" y="824" class="body">Processors: Theta(n^3) for standard Boolean matrix multiplication</text>
+  <text x="765" y="868" class="body">Number of matrix multiplications: ceil(log_2 n) repeated squarings</text>
+  <text x="765" y="912" class="body">Why the paper moves beyond it: strong NC depth, but very processor-heavy and tailored to dense all-pairs structure.</text>
+  <text x="765" y="946" class="small">In this example, A^4 already reaches the closure because the longest relevant path has at most 4 edges.</text>
+</svg>
