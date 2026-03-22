@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 400"
+   width="100%"
+   height="100%"
+   version="1.1"
+   id="svg27"
+   sodipodi:docname="bounded.svg"
+   inkscape:export-filename="bounded.png"
+   inkscape:export-xdpi="1600"
+   inkscape:export-ydpi="1600"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview27"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.44375"
+     inkscape:cx="400"
+     inkscape:cy="199.82684"
+     inkscape:window-width="1728"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="61"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg27" />
+  <defs
+     id="defs2">
+    <!-- Standard Arrow Marker -->
+    <marker
+       id="arrow"
+       viewBox="0 -5 10 10"
+       refX="30"
+       refY="0"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto">
+      <path
+         d="M0,-5 L10,0 L0,5"
+         fill="#94a3b8"
+         id="path1" />
+    </marker>
+    <!-- Highlighted Arrow Marker for New Edges -->
+    <marker
+       id="arrow-new"
+       viewBox="0 -5 10 10"
+       refX="30"
+       refY="0"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto">
+      <path
+         d="M0,-5 L10,0 L0,5"
+         fill="#fb923c"
+         id="path2" />
+    </marker>
+  </defs>
+  <!-- Edges (Standard original edges mapped to fan nodes) -->
+  <g
+     stroke="#94a3b8"
+     stroke-width="2"
+     marker-end="url(#arrow)"
+     id="g9">
+    <line
+       x1="100"
+       y1="50"
+       x2="250"
+       y2="100"
+       id="line2" />
+    <line
+       x1="100"
+       y1="150"
+       x2="250"
+       y2="100"
+       id="line3" />
+    <line
+       x1="100"
+       y1="250"
+       x2="250"
+       y2="300"
+       id="line4" />
+    <line
+       x1="100"
+       y1="350"
+       x2="250"
+       y2="300"
+       id="line5" />
+    <line
+       x1="550"
+       y1="100"
+       x2="700"
+       y2="50"
+       id="line6" />
+    <line
+       x1="550"
+       y1="100"
+       x2="700"
+       y2="150"
+       id="line7" />
+    <line
+       x1="550"
+       y1="300"
+       x2="700"
+       y2="250"
+       id="line8" />
+    <line
+       x1="550"
+       y1="300"
+       x2="700"
+       y2="350"
+       id="line9" />
+  </g>
+  <!-- Edges (New Fan-in and Fan-out connections to V) -->
+  <g
+     stroke="#fb923c"
+     stroke-width="3"
+     stroke-dasharray="4,4"
+     marker-end="url(#arrow-new)"
+     id="g13">
+    <line
+       x1="250"
+       y1="100"
+       x2="400"
+       y2="200"
+       id="line10" />
+    <line
+       x1="250"
+       y1="300"
+       x2="400"
+       y2="200"
+       id="line11" />
+    <line
+       x1="400"
+       y1="200"
+       x2="550"
+       y2="100"
+       id="line12" />
+    <line
+       x1="400"
+       y1="200"
+       x2="550"
+       y2="300"
+       id="line13" />
+  </g>
+  <!-- Nodes -->
+  <g
+     font-family="sans-serif"
+     font-size="12"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1f2937"
+     id="g27">
+    <!-- Central Node V -->
+    <g
+       transform="translate(400, 200)"
+       id="g14">
+      <circle
+         r="20"
+         fill="#f3e8ff"
+         stroke="#a855f7"
+         stroke-width="2"
+         id="circle13" />
+      <text
+         dy=".3em"
+         id="text13">V</text>
+    </g>
+    <!-- Introduced Fan Nodes -->
+    <g
+       transform="translate(250, 100)"
+       id="g15">
+      <circle
+         r="20"
+         fill="#ffedd5"
+         stroke="#f97316"
+         stroke-width="2"
+         stroke-dasharray="4"
+         id="circle14" />
+      <text
+         dy=".3em"
+         id="text14">FI₁</text>
+    </g>
+    <g
+       transform="translate(250, 300)"
+       id="g16">
+      <circle
+         r="20"
+         fill="#ffedd5"
+         stroke="#f97316"
+         stroke-width="2"
+         stroke-dasharray="4"
+         id="circle15" />
+      <text
+         dy=".3em"
+         id="text15">FI₂</text>
+    </g>
+    <g
+       transform="translate(550, 100)"
+       id="g17">
+      <circle
+         r="20"
+         fill="#ffedd5"
+         stroke="#f97316"
+         stroke-width="2"
+         stroke-dasharray="4"
+         id="circle16" />
+      <text
+         dy=".3em"
+         id="text16">FO₁</text>
+    </g>
+    <g
+       transform="translate(550, 300)"
+       id="g18">
+      <circle
+         r="20"
+         fill="#ffedd5"
+         stroke="#f97316"
+         stroke-width="2"
+         stroke-dasharray="4"
+         id="circle17" />
+      <text
+         dy=".3em"
+         id="text17">FO₂</text>
+    </g>
+    <!-- Predecessor Nodes (P1-P4) -->
+    <g
+       transform="translate(100, 50)"
+       id="g19">
+      <circle
+         r="20"
+         fill="#dbeafe"
+         stroke="#3b82f6"
+         stroke-width="2"
+         id="circle18" />
+      <text
+         dy=".3em"
+         id="text18">P1</text>
+    </g>
+    <g
+       transform="translate(100, 150)"
+       id="g20">
+      <circle
+         r="20"
+         fill="#dbeafe"
+         stroke="#3b82f6"
+         stroke-width="2"
+         id="circle19" />
+      <text
+         dy=".3em"
+         id="text19">P2</text>
+    </g>
+    <g
+       transform="translate(100, 250)"
+       id="g21">
+      <circle
+         r="20"
+         fill="#dbeafe"
+         stroke="#3b82f6"
+         stroke-width="2"
+         id="circle20" />
+      <text
+         dy=".3em"
+         id="text20">P3</text>
+    </g>
+    <g
+       transform="translate(100, 350)"
+       id="g22">
+      <circle
+         r="20"
+         fill="#dbeafe"
+         stroke="#3b82f6"
+         stroke-width="2"
+         id="circle21" />
+      <text
+         dy=".3em"
+         id="text21">P4</text>
+    </g>
+    <!-- Successor Nodes (S1-S4) -->
+    <g
+       transform="translate(700, 50)"
+       id="g23">
+      <circle
+         r="20"
+         fill="#dcfce3"
+         stroke="#22c55e"
+         stroke-width="2"
+         id="circle22" />
+      <text
+         dy=".3em"
+         id="text22">S1</text>
+    </g>
+    <g
+       transform="translate(700, 150)"
+       id="g24">
+      <circle
+         r="20"
+         fill="#dcfce3"
+         stroke="#22c55e"
+         stroke-width="2"
+         id="circle23" />
+      <text
+         dy=".3em"
+         id="text23">S2</text>
+    </g>
+    <g
+       transform="translate(700, 250)"
+       id="g25">
+      <circle
+         r="20"
+         fill="#dcfce3"
+         stroke="#22c55e"
+         stroke-width="2"
+         id="circle24" />
+      <text
+         dy=".3em"
+         id="text24">S3</text>
+    </g>
+    <g
+       transform="translate(700, 350)"
+       id="g26">
+      <circle
+         r="20"
+         fill="#dcfce3"
+         stroke="#22c55e"
+         stroke-width="2"
+         id="circle25" />
+      <text
+         dy=".3em"
+         id="text25">S4</text>
+    </g>
+  </g>
+</svg>

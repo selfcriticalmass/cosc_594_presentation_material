@@ -1,0 +1,535 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1000 600"
+    width="1000"
+    height="600"
+    style="
+        background-color: #f8fafc;
+        font-family:
+            system-ui,
+            -apple-system,
+            sans-serif;
+    "
+>
+    <!-- Background panels -->
+    <rect x="0" y="0" width="450" height="600" fill="#ffffff" />
+    <line x1="450" y1="0" x2="450" y2="600" stroke="#e2e8f0" stroke-width="2" />
+
+    <!-- ==================== GRAPH AREA ==================== -->
+    <g id="edges">
+        <line
+            x1="150"
+            y1="120"
+            x2="250"
+            y2="300"
+            stroke="#cbd5e1"
+            stroke-width="3"
+        />
+        <line
+            x1="350"
+            y1="120"
+            x2="250"
+            y2="300"
+            stroke="#cbd5e1"
+            stroke-width="3"
+        />
+        <line
+            x1="250"
+            y1="300"
+            x2="150"
+            y2="480"
+            stroke="#cbd5e1"
+            stroke-width="3"
+        />
+        <line
+            x1="250"
+            y1="300"
+            x2="350"
+            y2="480"
+            stroke="#cbd5e1"
+            stroke-width="3"
+        />
+    </g>
+
+    <g id="nodes">
+        <!-- Z1 -->
+        <circle
+            cx="150"
+            cy="120"
+            r="30"
+            fill="white"
+            stroke="#d1d5db"
+            stroke-width="4"
+        />
+        <text
+            x="150"
+            y="120"
+            text-anchor="middle"
+            dominant-baseline="central"
+            font-weight="bold"
+            font-size="16"
+            fill="#1f2937"
+        >
+            Z1
+        </text>
+        <rect x="135" y="155" width="30" height="16" rx="8" fill="#3b82f6" />
+        <text
+            x="150"
+            y="163"
+            fill="white"
+            font-size="10"
+            font-weight="bold"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            W
+        </text>
+
+        <!-- Z2 -->
+        <circle
+            cx="350"
+            cy="120"
+            r="30"
+            fill="white"
+            stroke="#d1d5db"
+            stroke-width="4"
+        />
+        <text
+            x="350"
+            y="120"
+            text-anchor="middle"
+            dominant-baseline="central"
+            font-weight="bold"
+            font-size="16"
+            fill="#1f2937"
+        >
+            Z2
+        </text>
+        <rect x="315" y="155" width="30" height="16" rx="8" fill="#3b82f6" />
+        <text
+            x="330"
+            y="163"
+            fill="white"
+            font-size="10"
+            font-weight="bold"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            W
+        </text>
+        <rect x="355" y="155" width="30" height="16" rx="8" fill="#10b981" />
+        <text
+            x="370"
+            y="163"
+            fill="white"
+            font-size="10"
+            font-weight="bold"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            U
+        </text>
+
+        <!-- X -->
+        <circle
+            cx="150"
+            cy="480"
+            r="30"
+            fill="white"
+            stroke="#d1d5db"
+            stroke-width="4"
+        />
+        <text
+            x="150"
+            y="480"
+            text-anchor="middle"
+            dominant-baseline="central"
+            font-weight="bold"
+            font-size="16"
+            fill="#1f2937"
+        >
+            X
+        </text>
+
+        <!-- Y -->
+        <circle
+            cx="350"
+            cy="480"
+            r="30"
+            fill="white"
+            stroke="#d1d5db"
+            stroke-width="4"
+        />
+        <text
+            x="350"
+            y="480"
+            text-anchor="middle"
+            dominant-baseline="central"
+            font-weight="bold"
+            font-size="16"
+            fill="#1f2937"
+        >
+            Y
+        </text>
+
+        <!-- V -->
+        <circle
+            cx="250"
+            cy="300"
+            r="40"
+            fill="white"
+            stroke="#818cf8"
+            stroke-width="4"
+        />
+        <text
+            x="250"
+            y="300"
+            text-anchor="middle"
+            dominant-baseline="central"
+            font-weight="bold"
+            font-size="20"
+            fill="#1f2937"
+        >
+            V
+        </text>
+    </g>
+
+    <!-- ==================== STATE PANEL ==================== -->
+    <g id="header">
+        <rect x="470" y="20" width="80" height="24" rx="4" fill="#e0e7ff" />
+        <text
+            x="510"
+            y="32"
+            fill="#3730a3"
+            font-size="12"
+            font-weight="bold"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            Step 1 of 6
+        </text>
+        <text x="470" y="65" font-size="20" font-weight="bold" fill="#111827">
+            Step 1: The Initial State
+        </text>
+
+        <text x="470" y="90" font-size="13" fill="#4b5563">
+            Predecessors Z1 and Z2 have learned about distinguished nodes W
+            (blue)
+        </text>
+        <text x="470" y="108" font-size="13" fill="#4b5563">
+            and U (green). They add these to their internal Tables and append
+        </text>
+        <text x="470" y="126" font-size="13" fill="#4b5563">
+            them to their Doubly Linked Lists (send-queues bound for V).
+        </text>
+    </g>
+
+    <!-- Z1 Panel -->
+    <g id="panel-z1">
+        <rect
+            x="470"
+            y="140"
+            width="510"
+            height="130"
+            fill="#ffffff"
+            rx="6"
+            stroke="#e2e8f0"
+            stroke-width="1"
+        />
+        <text x="485" y="160" font-size="13" font-weight="bold" fill="#1f2937">
+            Z1's Internal Memory
+        </text>
+
+        <text
+            x="530"
+            y="185"
+            font-size="11"
+            font-weight="bold"
+            fill="#475569"
+            text-anchor="middle"
+        >
+            Fact Node
+        </text>
+        <text
+            x="690"
+            y="185"
+            font-size="11"
+            font-weight="bold"
+            fill="#475569"
+            text-anchor="middle"
+        >
+            Reaches Z1?
+        </text>
+        <text
+            x="850"
+            y="185"
+            font-size="11"
+            font-weight="bold"
+            fill="#475569"
+            text-anchor="middle"
+        >
+            Reaches V?
+        </text>
+        <line x1="485" y1="192" x2="965" y2="192" stroke="#e2e8f0" />
+
+        <!-- Row 1 -->
+        <text
+            x="530"
+            y="206"
+            font-size="12"
+            fill="#1f2937"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            W
+        </text>
+        <text
+            x="690"
+            y="206"
+            font-size="14"
+            fill="#16a34a"
+            font-weight="bold"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            ✓
+        </text>
+        <text
+            x="850"
+            y="206"
+            font-size="14"
+            fill="#dc2626"
+            font-weight="bold"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            ✗
+        </text>
+
+        <text x="485" y="255" font-size="11" font-weight="bold" fill="#64748b">
+            Send-Queue to V (Linked List):
+        </text>
+        <rect
+            x="650"
+            y="245"
+            width="28"
+            height="20"
+            rx="4"
+            fill="white"
+            stroke="#60a5fa"
+            stroke-width="2"
+        />
+        <text
+            x="664"
+            y="255"
+            font-size="12"
+            font-weight="bold"
+            fill="#2563eb"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            W
+        </text>
+    </g>
+
+    <!-- Z2 Panel -->
+    <g id="panel-z2">
+        <rect
+            x="470"
+            y="280"
+            width="510"
+            height="130"
+            fill="#ffffff"
+            rx="6"
+            stroke="#e2e8f0"
+            stroke-width="1"
+        />
+        <text x="485" y="300" font-size="13" font-weight="bold" fill="#1f2937">
+            Z2's Internal Memory
+        </text>
+
+        <text
+            x="530"
+            y="325"
+            font-size="11"
+            font-weight="bold"
+            fill="#475569"
+            text-anchor="middle"
+        >
+            Fact Node
+        </text>
+        <text
+            x="690"
+            y="325"
+            font-size="11"
+            font-weight="bold"
+            fill="#475569"
+            text-anchor="middle"
+        >
+            Reaches Z2?
+        </text>
+        <text
+            x="850"
+            y="325"
+            font-size="11"
+            font-weight="bold"
+            fill="#475569"
+            text-anchor="middle"
+        >
+            Reaches V?
+        </text>
+        <line x1="485" y1="332" x2="965" y2="332" stroke="#e2e8f0" />
+
+        <!-- Row 1 -->
+        <text
+            x="530"
+            y="346"
+            font-size="12"
+            fill="#1f2937"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            W
+        </text>
+        <text
+            x="690"
+            y="346"
+            font-size="14"
+            fill="#16a34a"
+            font-weight="bold"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            ✓
+        </text>
+        <text
+            x="850"
+            y="346"
+            font-size="14"
+            fill="#dc2626"
+            font-weight="bold"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            ✗
+        </text>
+
+        <!-- Row 2 -->
+        <text
+            x="530"
+            y="366"
+            font-size="12"
+            fill="#1f2937"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            U
+        </text>
+        <text
+            x="690"
+            y="366"
+            font-size="14"
+            fill="#16a34a"
+            font-weight="bold"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            ✓
+        </text>
+        <text
+            x="850"
+            y="366"
+            font-size="14"
+            fill="#dc2626"
+            font-weight="bold"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            ✗
+        </text>
+
+        <text x="485" y="395" font-size="11" font-weight="bold" fill="#64748b">
+            Send-Queue to V (Linked List):
+        </text>
+        <rect
+            x="650"
+            y="385"
+            width="28"
+            height="20"
+            rx="4"
+            fill="white"
+            stroke="#60a5fa"
+            stroke-width="2"
+        />
+        <text
+            x="664"
+            y="395"
+            font-size="12"
+            font-weight="bold"
+            fill="#2563eb"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            W
+        </text>
+        <text
+            x="688"
+            y="395"
+            font-size="14"
+            fill="#94a3b8"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            ⇄
+        </text>
+        <rect
+            x="698"
+            y="385"
+            width="28"
+            height="20"
+            rx="4"
+            fill="white"
+            stroke="#34d399"
+            stroke-width="2"
+        />
+        <text
+            x="712"
+            y="395"
+            font-size="12"
+            font-weight="bold"
+            fill="#059669"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            U
+        </text>
+    </g>
+
+    <!-- V Panel -->
+    <g id="panel-v">
+        <rect
+            x="470"
+            y="420"
+            width="510"
+            height="160"
+            fill="#eef2ff"
+            rx="6"
+            stroke="#c7d2fe"
+            stroke-width="1"
+        />
+        <text x="485" y="440" font-size="13" font-weight="bold" fill="#312e81">
+            V's Internal Memory
+        </text>
+        <text
+            x="725"
+            y="500"
+            font-size="12"
+            font-style="italic"
+            fill="#9ca3af"
+            text-anchor="middle"
+            dominant-baseline="central"
+        >
+            No known reachability facts yet.
+        </text>
+    </g>
+</svg>

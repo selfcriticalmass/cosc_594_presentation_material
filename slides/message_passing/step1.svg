@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1000 600"
+   width="1000"
+   height="600"
+   style="background-color: #f8fafc; font-family: system-ui, -apple-system, sans-serif;"
+   version="1.1"
+   id="svg42"
+   sodipodi:docname="step1.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   inkscape:export-filename="step1.png"
+   inkscape:export-xdpi="1600"
+   inkscape:export-ydpi="1600"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs42" />
+  <sodipodi:namedview
+     id="namedview42"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.133"
+     inkscape:cx="500"
+     inkscape:cy="299.64695"
+     inkscape:window-width="1728"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg42" />
+  <!-- Background panels -->
+  <rect
+     x="0"
+     y="0"
+     width="450"
+     height="600"
+     fill="#ffffff"
+     id="rect1" />
+  <line
+     x1="450"
+     y1="0"
+     x2="450"
+     y2="600"
+     stroke="#e2e8f0"
+     stroke-width="2"
+     id="line1" />
+  <!-- ==================== GRAPH AREA ==================== -->
+  <g
+     id="edges">
+    <line
+       x1="150"
+       y1="120"
+       x2="250"
+       y2="300"
+       stroke="#cbd5e1"
+       stroke-width="3"
+       id="line2" />
+    <line
+       x1="350"
+       y1="120"
+       x2="250"
+       y2="300"
+       stroke="#cbd5e1"
+       stroke-width="3"
+       id="line3" />
+    <line
+       x1="250"
+       y1="300"
+       x2="150"
+       y2="480"
+       stroke="#cbd5e1"
+       stroke-width="3"
+       id="line4" />
+    <line
+       x1="250"
+       y1="300"
+       x2="350"
+       y2="480"
+       stroke="#cbd5e1"
+       stroke-width="3"
+       id="line5" />
+  </g>
+  <g
+     id="nodes">
+    <!-- Z1 -->
+    <circle
+       cx="150"
+       cy="120"
+       r="30"
+       fill="white"
+       stroke="#d1d5db"
+       stroke-width="4"
+       id="circle5" />
+    <text
+       x="150"
+       y="120"
+       text-anchor="middle"
+       dominant-baseline="central"
+       font-weight="bold"
+       font-size="16"
+       fill="#1f2937"
+       id="text5">Z1</text>
+    <rect
+       x="135"
+       y="155"
+       width="30"
+       height="16"
+       rx="8"
+       fill="#3b82f6"
+       id="rect5" />
+    <text
+       x="150"
+       y="163"
+       fill="white"
+       font-size="10"
+       font-weight="bold"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text6">W</text>
+    <!-- Z2 -->
+    <circle
+       cx="350"
+       cy="120"
+       r="30"
+       fill="white"
+       stroke="#d1d5db"
+       stroke-width="4"
+       id="circle6" />
+    <text
+       x="350"
+       y="120"
+       text-anchor="middle"
+       dominant-baseline="central"
+       font-weight="bold"
+       font-size="16"
+       fill="#1f2937"
+       id="text7">Z2</text>
+    <rect
+       x="315"
+       y="155"
+       width="30"
+       height="16"
+       rx="8"
+       fill="#3b82f6"
+       id="rect7" />
+    <text
+       x="330"
+       y="163"
+       fill="white"
+       font-size="10"
+       font-weight="bold"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text8">W</text>
+    <rect
+       x="355"
+       y="155"
+       width="30"
+       height="16"
+       rx="8"
+       fill="#10b981"
+       id="rect8" />
+    <text
+       x="370"
+       y="163"
+       fill="white"
+       font-size="10"
+       font-weight="bold"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text9">U</text>
+    <!-- X -->
+    <circle
+       cx="150"
+       cy="480"
+       r="30"
+       fill="white"
+       stroke="#d1d5db"
+       stroke-width="4"
+       id="circle9" />
+    <text
+       x="150"
+       y="480"
+       text-anchor="middle"
+       dominant-baseline="central"
+       font-weight="bold"
+       font-size="16"
+       fill="#1f2937"
+       id="text10">X</text>
+    <!-- Y -->
+    <circle
+       cx="350"
+       cy="480"
+       r="30"
+       fill="white"
+       stroke="#d1d5db"
+       stroke-width="4"
+       id="circle10" />
+    <text
+       x="350"
+       y="480"
+       text-anchor="middle"
+       dominant-baseline="central"
+       font-weight="bold"
+       font-size="16"
+       fill="#1f2937"
+       id="text11">Y</text>
+    <!-- V -->
+    <circle
+       cx="250"
+       cy="300"
+       r="40"
+       fill="white"
+       stroke="#818cf8"
+       stroke-width="4"
+       id="circle11" />
+    <text
+       x="250"
+       y="300"
+       text-anchor="middle"
+       dominant-baseline="central"
+       font-weight="bold"
+       font-size="20"
+       fill="#1f2937"
+       id="text12">V</text>
+  </g>
+  <!-- ==================== STATE PANEL ==================== -->
+  <g
+     id="header">
+    <rect
+       x="470"
+       y="20"
+       width="80"
+       height="24"
+       rx="4"
+       fill="#e0e7ff"
+       id="rect12" />
+    <text
+       x="510"
+       y="32"
+       fill="#3730a3"
+       font-size="12"
+       font-weight="bold"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text13">Step 1 of 6</text>
+    <text
+       x="470"
+       y="65"
+       font-size="20"
+       font-weight="bold"
+       fill="#111827"
+       id="text14">Step 1: The Initial State</text>
+    <text
+       x="470"
+       y="90"
+       font-size="13"
+       fill="#4b5563"
+       id="text15">Predecessors Z1 and Z2 have learned about distinguished nodes W (blue)</text>
+    <text
+       x="470"
+       y="108"
+       font-size="13"
+       fill="#4b5563"
+       id="text16">and U (green). They add these to their internal Tables and append</text>
+    <text
+       x="470"
+       y="126"
+       font-size="13"
+       fill="#4b5563"
+       id="text17">them to their Doubly Linked Lists (send-queues bound for V).</text>
+  </g>
+  <!-- Z1 Panel -->
+  <g
+     id="panel-z1">
+    <rect
+       x="470"
+       y="140"
+       width="510"
+       height="130"
+       fill="#ffffff"
+       rx="6"
+       stroke="#e2e8f0"
+       stroke-width="1"
+       id="rect17"
+       sodipodi:insensitive="true" />
+    <text
+       x="485"
+       y="160"
+       font-size="13"
+       font-weight="bold"
+       fill="#1f2937"
+       id="text18">Z1's Internal Memory</text>
+    <text
+       x="530"
+       y="185"
+       font-size="11"
+       font-weight="bold"
+       fill="#475569"
+       text-anchor="middle"
+       id="text19">Fact Node</text>
+    <text
+       x="690"
+       y="185"
+       font-size="11"
+       font-weight="bold"
+       fill="#475569"
+       text-anchor="middle"
+       id="text20">Reaches Z1?</text>
+    <text
+       x="850"
+       y="185"
+       font-size="11"
+       font-weight="bold"
+       fill="#475569"
+       text-anchor="middle"
+       id="text21">Reaches V?</text>
+    <line
+       x1="485"
+       y1="192"
+       x2="965"
+       y2="192"
+       stroke="#e2e8f0"
+       id="line21" />
+    <!-- Row 1 -->
+    <text
+       x="530"
+       y="206"
+       font-size="12"
+       fill="#1f2937"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text22">W</text>
+    <text
+       x="690"
+       y="206"
+       font-size="14"
+       fill="#16a34a"
+       font-weight="bold"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text23">✓</text>
+    <text
+       x="850"
+       y="206"
+       font-size="14"
+       fill="#dc2626"
+       font-weight="bold"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text24">✗</text>
+    <text
+       x="485"
+       y="255"
+       font-size="11"
+       font-weight="bold"
+       fill="#64748b"
+       id="text25">Send-Queue to V (Linked List):</text>
+    <rect
+       x="690"
+       y="241"
+       width="28"
+       height="20"
+       rx="4"
+       fill="#ffffff"
+       stroke="#60a5fa"
+       stroke-width="2"
+       id="rect25" />
+    <text
+       x="704"
+       y="251"
+       font-size="12px"
+       font-weight="bold"
+       fill="#2563eb"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text26">W</text>
+  </g>
+  <!-- Z2 Panel -->
+  <g
+     id="panel-z2">
+    <rect
+       x="470"
+       y="280"
+       width="510"
+       height="130"
+       fill="#ffffff"
+       rx="6"
+       stroke="#e2e8f0"
+       stroke-width="1"
+       id="rect26"
+       sodipodi:insensitive="true" />
+    <text
+       x="485"
+       y="300"
+       font-size="13"
+       font-weight="bold"
+       fill="#1f2937"
+       id="text27">Z2's Internal Memory</text>
+    <text
+       x="530"
+       y="325"
+       font-size="11"
+       font-weight="bold"
+       fill="#475569"
+       text-anchor="middle"
+       id="text28">Fact Node</text>
+    <text
+       x="690"
+       y="325"
+       font-size="11"
+       font-weight="bold"
+       fill="#475569"
+       text-anchor="middle"
+       id="text29">Reaches Z2?</text>
+    <text
+       x="850"
+       y="325"
+       font-size="11"
+       font-weight="bold"
+       fill="#475569"
+       text-anchor="middle"
+       id="text30">Reaches V?</text>
+    <line
+       x1="485"
+       y1="332"
+       x2="965"
+       y2="332"
+       stroke="#e2e8f0"
+       id="line30" />
+    <!-- Row 1 -->
+    <text
+       x="530"
+       y="346"
+       font-size="12"
+       fill="#1f2937"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text31">W</text>
+    <text
+       x="690"
+       y="346"
+       font-size="14"
+       fill="#16a34a"
+       font-weight="bold"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text32">✓</text>
+    <text
+       x="850"
+       y="346"
+       font-size="14"
+       fill="#dc2626"
+       font-weight="bold"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text33">✗</text>
+    <!-- Row 2 -->
+    <text
+       x="530"
+       y="366"
+       font-size="12"
+       fill="#1f2937"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text34">U</text>
+    <text
+       x="690"
+       y="366"
+       font-size="14"
+       fill="#16a34a"
+       font-weight="bold"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text35">✓</text>
+    <text
+       x="850"
+       y="366"
+       font-size="14"
+       fill="#dc2626"
+       font-weight="bold"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text36">✗</text>
+    <text
+       x="485"
+       y="395"
+       font-size="11"
+       font-weight="bold"
+       fill="#64748b"
+       id="text37">Send-Queue to V (Linked List):</text>
+    <rect
+       x="688"
+       y="381"
+       width="28"
+       height="20"
+       rx="4"
+       fill="#ffffff"
+       stroke="#60a5fa"
+       stroke-width="2"
+       id="rect37" />
+    <text
+       x="700"
+       y="391"
+       font-size="12px"
+       font-weight="bold"
+       fill="#2563eb"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text38">W</text>
+    <text
+       x="730"
+       y="391"
+       font-size="14px"
+       fill="#94a3b8"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text39">⇄</text>
+    <rect
+       x="744"
+       y="381"
+       width="28"
+       height="20"
+       rx="4"
+       fill="#ffffff"
+       stroke="#34d399"
+       stroke-width="2"
+       id="rect39"
+       style="display:inline" />
+    <text
+       x="756"
+       y="393"
+       font-size="12px"
+       font-weight="bold"
+       fill="#059669"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text40"
+       inkscape:label="text40">U</text>
+  </g>
+  <!-- V Panel -->
+  <g
+     id="panel-v">
+    <rect
+       x="470"
+       y="420"
+       width="510"
+       height="160"
+       fill="#eef2ff"
+       rx="6"
+       stroke="#c7d2fe"
+       stroke-width="1"
+       id="rect40" />
+    <text
+       x="485"
+       y="440"
+       font-size="13"
+       font-weight="bold"
+       fill="#312e81"
+       id="text41">V's Internal Memory</text>
+    <text
+       x="725"
+       y="500"
+       font-size="12"
+       font-style="italic"
+       fill="#9ca3af"
+       text-anchor="middle"
+       dominant-baseline="central"
+       id="text42">No known reachability facts yet.</text>
+  </g>
+</svg>

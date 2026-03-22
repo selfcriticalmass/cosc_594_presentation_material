@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="600"
+   height="250"
+   viewBox="0 0 600 250"
+   style="background-color: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;"
+   version="1.1"
+   id="svg45"
+   sodipodi:docname="middling_state.svg"
+   inkscape:export-filename="middling_state.png"
+   inkscape:export-xdpi="1200"
+   inkscape:export-ydpi="1200"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview45"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.8883333"
+     inkscape:cx="300"
+     inkscape:cy="125.24272"
+     inkscape:window-width="1728"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="61"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g28" />
+  <defs
+     id="defs2">
+    <!-- Arrowheads for directed edges -->
+    <marker
+       id="arrow-grey"
+       viewBox="0 0 10 10"
+       refX="14"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto">
+      <path
+         d="M 0 0 L 10 5 L 0 10 z"
+         fill="#cbd5e1"
+         id="path1" />
+    </marker>
+    <marker
+       id="arrow-red"
+       viewBox="0 0 10 10"
+       refX="14"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto">
+      <path
+         d="M 0 0 L 10 5 L 0 10 z"
+         fill="#f87171"
+         id="path2" />
+    </marker>
+  </defs>
+  <!-- Base Edges (Unreached by local search distance limit) -->
+  <g
+     stroke="#cbd5e1"
+     stroke-width="2"
+     marker-end="url(#arrow-grey)"
+     id="g7">
+    <line
+       x1="160"
+       y1="40"
+       x2="240"
+       y2="40"
+       id="line2" />
+    <!-- N3 -> N6 -->
+    <line
+       x1="240"
+       y1="40"
+       x2="320"
+       y2="75"
+       id="line3" />
+    <!-- N6 -> N9 -->
+    <line
+       x1="160"
+       y1="210"
+       x2="240"
+       y2="210"
+       id="line4" />
+    <!-- N5 -> N8 -->
+    <line
+       x1="320"
+       y1="175"
+       x2="400"
+       y2="125"
+       id="line5" />
+    <!-- N10 -> N12 -->
+    <line
+       x1="320"
+       y1="175"
+       x2="400"
+       y2="210"
+       id="line6" />
+    <!-- N10 -> N13 -->
+    <line
+       x1="400"
+       y1="210"
+       x2="480"
+       y2="175"
+       id="line7" />
+    <!-- N13 -> N15 -->
+  </g>
+  <!-- Highlighted Local Search Edges -->
+  <g
+     stroke="#f87171"
+     stroke-width="2.5"
+     marker-end="url(#arrow-red)"
+     id="g25">
+    <!-- Search from Start -->
+    <line
+       x1="40"
+       y1="125"
+       x2="100"
+       y2="75"
+       id="line8" />
+    <!-- S -> N1 -->
+    <line
+       x1="40"
+       y1="125"
+       x2="100"
+       y2="175"
+       id="line9" />
+    <!-- S -> N2 -->
+    <line
+       x1="100"
+       y1="75"
+       x2="160"
+       y2="40"
+       id="line10" />
+    <!-- N1 -> N3 -->
+    <line
+       x1="100"
+       y1="75"
+       x2="160"
+       y2="125"
+       id="line11" />
+    <!-- N1 -> N4 -->
+    <line
+       x1="100"
+       y1="175"
+       x2="160"
+       y2="125"
+       id="line12" />
+    <!-- N2 -> N4 -->
+    <line
+       x1="100"
+       y1="175"
+       x2="160"
+       y2="210"
+       id="line13" />
+    <!-- N2 -> N5 -->
+    <!-- Search from Milestone N4 -->
+    <line
+       x1="160"
+       y1="125"
+       x2="240"
+       y2="125"
+       id="line14" />
+    <!-- N4 -> N7 -->
+    <line
+       x1="160"
+       y1="125"
+       x2="240"
+       y2="210"
+       id="line15" />
+    <!-- N4 -> N8 -->
+    <line
+       x1="240"
+       y1="125"
+       x2="320"
+       y2="75"
+       id="line16" />
+    <!-- N7 -> N9 -->
+    <line
+       x1="240"
+       y1="125"
+       x2="320"
+       y2="175"
+       id="line17" />
+    <!-- N7 -> N10 -->
+    <line
+       x1="240"
+       y1="210"
+       x2="320"
+       y2="175"
+       id="line18" />
+    <!-- N8 -> N10 -->
+    <!-- Search from Milestone N9 -->
+    <line
+       x1="320"
+       y1="75"
+       x2="400"
+       y2="40"
+       id="line19" />
+    <!-- N9 -> N11 -->
+    <line
+       x1="320"
+       y1="75"
+       x2="400"
+       y2="125"
+       id="line20" />
+    <!-- N9 -> N12 -->
+    <line
+       x1="400"
+       y1="40"
+       x2="480"
+       y2="75"
+       id="line21" />
+    <!-- N11 -> N14 -->
+    <!-- Search from Milestone N12 -->
+    <line
+       x1="400"
+       y1="125"
+       x2="480"
+       y2="75"
+       id="line22" />
+    <!-- N12 -> N14 -->
+    <line
+       x1="400"
+       y1="125"
+       x2="480"
+       y2="175"
+       id="line23" />
+    <!-- N12 -> N15 -->
+    <line
+       x1="480"
+       y1="75"
+       x2="560"
+       y2="125"
+       id="line24" />
+    <!-- N14 -> E -->
+    <line
+       x1="480"
+       y1="175"
+       x2="560"
+       y2="125"
+       id="line25" />
+    <!-- N15 -> E -->
+  </g>
+  <!-- Local Search Radii Limits -->
+  <g
+     fill="none"
+     stroke="#ef4444"
+     stroke-width="2"
+     stroke-dasharray="6,4"
+     opacity="0.4"
+     id="g28" />
+  <!-- Base Nodes -->
+  <g
+     fill="#94a3b8"
+     id="g40">
+    <circle
+       cx="100"
+       cy="75"
+       r="4"
+       id="circle29" />
+    <circle
+       cx="100"
+       cy="175"
+       r="4"
+       id="circle30" />
+    <circle
+       cx="160"
+       cy="40"
+       r="4"
+       id="circle31" />
+    <circle
+       cx="160"
+       cy="210"
+       r="4"
+       id="circle32" />
+    <circle
+       cx="240"
+       cy="40"
+       r="4"
+       id="circle33" />
+    <circle
+       cx="240"
+       cy="125"
+       r="4"
+       id="circle34" />
+    <circle
+       cx="240"
+       cy="210"
+       r="4"
+       id="circle35" />
+    <circle
+       cx="320"
+       cy="175"
+       r="4"
+       id="circle36" />
+    <circle
+       cx="400"
+       cy="40"
+       r="4"
+       id="circle37" />
+    <circle
+       cx="400"
+       cy="210"
+       r="4"
+       id="circle38" />
+    <circle
+       cx="480"
+       cy="75"
+       r="4"
+       id="circle39" />
+    <circle
+       cx="480"
+       cy="175"
+       r="4"
+       id="circle40" />
+  </g>
+  <!-- Distinguished Nodes (Milestones) -->
+  <g
+     fill="#ef4444"
+     stroke="#fff"
+     stroke-width="2"
+     id="g43">
+    <circle
+       cx="160"
+       cy="125"
+       r="7"
+       id="circle41" />
+    <circle
+       cx="320"
+       cy="75"
+       r="7"
+       id="circle42" />
+    <circle
+       cx="400"
+       cy="125"
+       r="7"
+       id="circle43" />
+  </g>
+  <!-- Start & End Nodes -->
+  <circle
+     cx="40"
+     cy="125"
+     r="7"
+     fill="#22c55e"
+     stroke="#fff"
+     stroke-width="2"
+     id="circle44" />
+  <circle
+     cx="560"
+     cy="125"
+     r="7"
+     fill="#3b82f6"
+     stroke="#fff"
+     stroke-width="2"
+     id="circle45" />
+</svg>

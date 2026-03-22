@@ -1,233 +1,1051 @@
- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 850" width="1400" height="850">
-        <!-- Background -->
-        <rect width="1400" height="850" fill="#FFFFFF" />
-
-        <defs>
-            <!-- Standard Edge Arrow Marker -->
-            <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                <path d="M 0 0 L 10 5 L 0 10 z" fill="#CCCCCC" />
-            </marker>
-
-            <!-- Nodes -->
-            <g id="node-reg">
-                <circle cx="0" cy="0" r="12" fill="#FFFFFF" stroke="#333333" stroke-width="2" />
-            </g>
-            <g id="node-dist">
-                <circle cx="0" cy="0" r="12" fill="#1F77B4" stroke="#333333" stroke-width="2" />
-            </g>
-
-            <!-- Base Grid Edges -->
-            <g id="right-edge">
-                <line x1="15" y1="0" x2="65" y2="0" stroke="#CCCCCC" stroke-width="2" marker-end="url(#arrow)" />
-            </g>
-            <g id="down-edge">
-                <line x1="0" y1="15" x2="0" y2="55" stroke="#CCCCCC" stroke-width="2" marker-end="url(#arrow)" />
-            </g>
-
-            <!-- A Single Row of Rightward Edges -->
-            <g id="row-right-edges">
-                <use href="#right-edge" x="0" y="0" />
-                <use href="#right-edge" x="80" y="0" />
-                <use href="#right-edge" x="160" y="0" />
-                <use href="#right-edge" x="240" y="0" />
-            </g>
-
-            <!-- A Single Column of Downward Edges -->
-            <g id="col-down-edges">
-                <use href="#down-edge" x="0" y="0" />
-                <use href="#down-edge" x="0" y="70" />
-                <use href="#down-edge" x="0" y="140" />
-            </g>
-
-            <!-- Complete 5x4 Grid Edges -->
-            <g id="panel-edges">
-                <use href="#row-right-edges" x="0" y="0" />
-                <use href="#row-right-edges" x="0" y="70" />
-                <use href="#row-right-edges" x="0" y="140" />
-                <use href="#row-right-edges" x="0" y="210" />
-
-                <use href="#col-down-edges" x="0" y="0" />
-                <use href="#col-down-edges" x="80" y="0" />
-                <use href="#col-down-edges" x="160" y="0" />
-                <use href="#col-down-edges" x="240" y="0" />
-                <use href="#col-down-edges" x="320" y="0" />
-            </g>
-        </defs>
-
-        <!-- Global Styling for Texts -->
-        <style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1400 850"
+   width="1400"
+   height="850"
+   version="1.1"
+   id="svg138"
+   sodipodi:docname="random_seed.svg"
+   inkscape:export-filename="random_seed.png"
+   inkscape:export-xdpi="1600"
+   inkscape:export-ydpi="1600"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview138"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.825"
+     inkscape:cx="700"
+     inkscape:cy="424.84848"
+     inkscape:window-width="1728"
+     inkscape:window-height="1084"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg138" />
+  <!-- Background -->
+  <rect
+     width="1400"
+     height="850"
+     fill="#FFFFFF"
+     id="rect1" />
+  <defs
+     id="defs18">
+    <!-- Standard Edge Arrow Marker -->
+    <marker
+       id="arrow"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto">
+      <path
+         d="M 0 0 L 10 5 L 0 10 z"
+         fill="#CCCCCC"
+         id="path1" />
+    </marker>
+    <!-- Nodes -->
+    <g
+       id="node-reg">
+      <circle
+         cx="0"
+         cy="0"
+         r="12"
+         fill="#FFFFFF"
+         stroke="#333333"
+         stroke-width="2"
+         id="circle1" />
+    </g>
+    <g
+       id="node-dist">
+      <circle
+         cx="0"
+         cy="0"
+         r="12"
+         fill="#1F77B4"
+         stroke="#333333"
+         stroke-width="2"
+         id="circle2" />
+    </g>
+    <!-- Base Grid Edges -->
+    <g
+       id="right-edge">
+      <line
+         x1="15"
+         y1="0"
+         x2="65"
+         y2="0"
+         stroke="#CCCCCC"
+         stroke-width="2"
+         marker-end="url(#arrow)"
+         id="line2" />
+    </g>
+    <g
+       id="down-edge">
+      <line
+         x1="0"
+         y1="15"
+         x2="0"
+         y2="55"
+         stroke="#CCCCCC"
+         stroke-width="2"
+         marker-end="url(#arrow)"
+         id="line3" />
+    </g>
+    <!-- A Single Row of Rightward Edges -->
+    <g
+       id="row-right-edges">
+      <use
+         href="#right-edge"
+         x="0"
+         y="0"
+         id="use3" />
+      <use
+         href="#right-edge"
+         x="80"
+         y="0"
+         id="use4" />
+      <use
+         href="#right-edge"
+         x="160"
+         y="0"
+         id="use5" />
+      <use
+         href="#right-edge"
+         x="240"
+         y="0"
+         id="use6" />
+    </g>
+    <!-- A Single Column of Downward Edges -->
+    <g
+       id="col-down-edges">
+      <use
+         href="#down-edge"
+         x="0"
+         y="0"
+         id="use7" />
+      <use
+         href="#down-edge"
+         x="0"
+         y="70"
+         id="use8" />
+      <use
+         href="#down-edge"
+         x="0"
+         y="140"
+         id="use9" />
+    </g>
+    <!-- Complete 5x4 Grid Edges -->
+    <g
+       id="panel-edges">
+      <use
+         href="#row-right-edges"
+         x="0"
+         y="0"
+         id="use10" />
+      <use
+         href="#row-right-edges"
+         x="0"
+         y="70"
+         id="use11" />
+      <use
+         href="#row-right-edges"
+         x="0"
+         y="140"
+         id="use12" />
+      <use
+         href="#row-right-edges"
+         x="0"
+         y="210"
+         id="use13" />
+      <use
+         href="#col-down-edges"
+         x="0"
+         y="0"
+         id="use14" />
+      <use
+         href="#col-down-edges"
+         x="80"
+         y="0"
+         id="use15" />
+      <use
+         href="#col-down-edges"
+         x="160"
+         y="0"
+         id="use16" />
+      <use
+         href="#col-down-edges"
+         x="240"
+         y="0"
+         id="use17" />
+      <use
+         href="#col-down-edges"
+         x="320"
+         y="0"
+         id="use18" />
+    </g>
+  </defs>
+  <!-- Global Styling for Texts -->
+  <style
+     id="style18">
             .col-header { font-family: sans-serif; font-size: 22px; font-weight: bold; fill: #333333; letter-spacing: 1px;}
             .title { font-family: sans-serif; font-size: 20px; font-weight: bold; fill: #444444; }
             .annotation { font-family: sans-serif; font-size: 15px; fill: #555555; }
             .math { font-family: Georgia, serif; font-style: italic; }
             .legend-text { font-family: sans-serif; font-size: 14px; fill: #333333; }
         </style>
-
-        <!-- ========================================== -->
-        <!-- COLUMN HEADERS                             -->
-        <!-- ========================================== -->
-        <text x="240" y="45" class="col-header" text-anchor="middle">DETERMINISTIC SELECTION</text>
-        <text x="1160" y="45" class="col-header" text-anchor="middle">RANDOMIZED SELECTION</text>
-
-
-        <!-- ========================================== -->
-        <!-- PANEL 1A: Deterministic Left-Block         -->
-        <!-- ========================================== -->
-        <g transform="translate(80, 110)">
-            <text x="160" y="-30" class="title" text-anchor="middle">1A. Left-Block Pattern</text>
-
-            <use href="#panel-edges" x="0" y="0" />
-
-            <!-- Adversary Path -->
-            <path d="M 160 0 L 160 210 L 320 210" fill="none" stroke="#D62728" stroke-width="6" stroke-linejoin="round" />
-
-            <!-- Crimson Brackets -->
-            <path d="M 175 0 L 185 0 L 185 210 L 175 210" fill="none" stroke="#D62728" stroke-width="2" />
-            <path d="M 160 225 L 160 235 L 320 235 L 320 225" fill="none" stroke="#D62728" stroke-width="2" />
-
-            <!-- Nodes -->
-            <!-- Col 1, 2 (Blue) -->
-            <use href="#node-dist" x="0" y="0" />   <use href="#node-dist" x="80" y="0" />
-            <use href="#node-dist" x="0" y="70" />  <use href="#node-dist" x="80" y="70" />
-            <use href="#node-dist" x="0" y="140" /> <use href="#node-dist" x="80" y="140" />
-            <use href="#node-dist" x="0" y="210" /> <use href="#node-dist" x="80" y="210" />
-            <!-- Col 3, 4, 5 (White) -->
-            <use href="#node-reg" x="160" y="0" />   <use href="#node-reg" x="240" y="0" />   <use href="#node-reg" x="320" y="0" />
-            <use href="#node-reg" x="160" y="70" />  <use href="#node-reg" x="240" y="70" />  <use href="#node-reg" x="320" y="70" />
-            <use href="#node-reg" x="160" y="140" /> <use href="#node-reg" x="240" y="140" /> <use href="#node-reg" x="320" y="140" />
-            <use href="#node-reg" x="160" y="210" /> <use href="#node-reg" x="240" y="210" /> <use href="#node-reg" x="320" y="210" />
-
-            <!-- Annotation -->
-            <text x="160" y="265" class="annotation" text-anchor="middle">Adversary routes path through unselected block. Gap = <tspan class="math">Ω(n)</tspan></text>
-        </g>
-
-        <!-- ========================================== -->
-        <!-- PANEL 1B: Deterministic Row-Alternating    -->
-        <!-- ========================================== -->
-        <g transform="translate(80, 480)">
-            <text x="160" y="-30" class="title" text-anchor="middle">1B. Row-Alternating Pattern</text>
-
-            <use href="#panel-edges" x="0" y="0" />
-
-            <!-- Adversary Path -->
-            <path d="M 0 70 L 320 70" fill="none" stroke="#D62728" stroke-width="6" stroke-linejoin="round" />
-
-            <!-- Crimson Brackets -->
-            <path d="M 0 85 L 0 95 L 320 95 L 320 85" fill="none" stroke="#D62728" stroke-width="2" />
-
-            <!-- Nodes -->
-            <!-- Row 1, 3 (Blue) -->
-            <use href="#node-dist" x="0" y="0" />   <use href="#node-dist" x="80" y="0" />   <use href="#node-dist" x="160" y="0" />   <use href="#node-dist" x="240" y="0" />   <use href="#node-dist" x="320" y="0" />
-            <use href="#node-dist" x="0" y="140" /> <use href="#node-dist" x="80" y="140" /> <use href="#node-dist" x="160" y="140" /> <use href="#node-dist" x="240" y="140" /> <use href="#node-dist" x="320" y="140" />
-            <!-- Row 2, 4 (White) -->
-            <use href="#node-reg" x="0" y="70" />   <use href="#node-reg" x="80" y="70" />   <use href="#node-reg" x="160" y="70" />   <use href="#node-reg" x="240" y="70" />   <use href="#node-reg" x="320" y="70" />
-            <use href="#node-reg" x="0" y="210" />  <use href="#node-reg" x="80" y="210" />  <use href="#node-reg" x="160" y="210" />  <use href="#node-reg" x="240" y="210" />  <use href="#node-reg" x="320" y="210" />
-
-            <!-- Annotation -->
-            <text x="160" y="265" class="annotation" text-anchor="middle">Adversary routes path along unselected stripe. Gap = <tspan class="math">Ω(n)</tspan></text>
-        </g>
-
-        <!-- ========================================== -->
-        <!-- BASE GRAPH (Center)                        -->
-        <!-- ========================================== -->
-        <g transform="translate(540, 290)">
-            <text x="160" y="-30" class="title" text-anchor="middle">Base Graph Structure</text>
-
-            <use href="#panel-edges" x="0" y="0" />
-
-            <!-- All White Nodes -->
-            <use href="#node-reg" x="0" y="0" />   <use href="#node-reg" x="80" y="0" />   <use href="#node-reg" x="160" y="0" />   <use href="#node-reg" x="240" y="0" />   <use href="#node-reg" x="320" y="0" />
-            <use href="#node-reg" x="0" y="70" />  <use href="#node-reg" x="80" y="70" />  <use href="#node-reg" x="160" y="70" />  <use href="#node-reg" x="240" y="70" />  <use href="#node-reg" x="320" y="70" />
-            <use href="#node-reg" x="0" y="140" /> <use href="#node-reg" x="80" y="140" /> <use href="#node-reg" x="160" y="140" /> <use href="#node-reg" x="240" y="140" /> <use href="#node-reg" x="320" y="140" />
-            <use href="#node-reg" x="0" y="210" /> <use href="#node-reg" x="80" y="210" /> <use href="#node-reg" x="160" y="210" /> <use href="#node-reg" x="240" y="210" /> <use href="#node-reg" x="320" y="210" />
-
-            <!-- Annotation -->
-            <text x="160" y="265" class="annotation" text-anchor="middle">The underlying sparse directed grid.</text>
-        </g>
-
-        <!-- ========================================== -->
-        <!-- PANEL 2A: Randomized Alpha                 -->
-        <!-- ========================================== -->
-        <g transform="translate(1000, 110)">
-            <text x="160" y="-30" class="title" text-anchor="middle">2A. Random Seed Alpha</text>
-
-            <use href="#panel-edges" x="0" y="0" />
-
-            <!-- Tested Path -->
-            <path d="M 160 0 L 160 210 L 320 210" fill="none" stroke="#2CA02C" stroke-width="6" stroke-linejoin="round" />
-
-            <!-- Green Brackets -->
-            <path d="M 175 0 L 185 0 L 185 70 L 175 70" fill="none" stroke="#2CA02C" stroke-width="2" />
-            <path d="M 175 70 L 185 70 L 185 210 L 175 210" fill="none" stroke="#2CA02C" stroke-width="2" />
-            <path d="M 160 225 L 160 235 L 240 235 L 240 225" fill="none" stroke="#2CA02C" stroke-width="2" />
-            <path d="M 240 225 L 240 235 L 320 235 L 320 225" fill="none" stroke="#2CA02C" stroke-width="2" />
-
-            <!-- Nodes -->
-            <!-- Row 1 -->
-            <use href="#node-dist" x="0" y="0" />   <use href="#node-reg" x="80" y="0" />   <use href="#node-reg" x="160" y="0" />   <use href="#node-dist" x="240" y="0" />   <use href="#node-reg" x="320" y="0" />
-            <!-- Row 2 -->
-            <use href="#node-reg" x="0" y="70" />   <use href="#node-dist" x="80" y="70" /> <use href="#node-dist" x="160" y="70" /> <use href="#node-reg" x="240" y="70" />  <use href="#node-dist" x="320" y="70" />
-            <!-- Row 3 -->
-            <use href="#node-dist" x="0" y="140" /> <use href="#node-reg" x="80" y="140" /> <use href="#node-dist" x="160" y="140" /> <use href="#node-reg" x="240" y="140" /> <use href="#node-dist" x="320" y="140" />
-            <!-- Row 4 -->
-            <use href="#node-reg" x="0" y="210" />  <use href="#node-dist" x="80" y="210" /> <use href="#node-reg" x="160" y="210" /> <use href="#node-dist" x="240" y="210" /> <use href="#node-reg" x="320" y="210" />
-
-            <!-- Annotation -->
-            <text x="160" y="265" class="annotation" text-anchor="middle">Path is fractured. Max gap bounded by <tspan class="math">Õ((n log n)/s)</tspan></text>
-        </g>
-
-        <!-- ========================================== -->
-        <!-- PANEL 2B: Randomized Beta                  -->
-        <!-- ========================================== -->
-        <g transform="translate(1000, 480)">
-            <text x="160" y="-30" class="title" text-anchor="middle">2B. Random Seed Beta</text>
-
-            <use href="#panel-edges" x="0" y="0" />
-
-            <!-- Tested Path (Snaking) -->
-            <path d="M 0 0 L 80 0 L 80 70 L 160 70 L 160 140 L 240 140 L 240 210 L 320 210" fill="none" stroke="#2CA02C" stroke-width="6" stroke-linejoin="round" />
-
-            <!-- Green Brackets -->
-            <path d="M 0 -15 L 0 -25 L 80 -25 L 80 -15" fill="none" stroke="#2CA02C" stroke-width="2" />
-            <path d="M 95 0 L 105 0 L 105 70 L 95 70" fill="none" stroke="#2CA02C" stroke-width="2" />
-            <path d="M 80 55 L 80 45 L 160 45 L 160 55" fill="none" stroke="#2CA02C" stroke-width="2" />
-            <path d="M 175 70 L 185 70 L 185 140 L 175 140" fill="none" stroke="#2CA02C" stroke-width="2" />
-            <path d="M 160 125 L 160 115 L 240 115 L 240 125" fill="none" stroke="#2CA02C" stroke-width="2" />
-            <path d="M 255 140 L 265 140 L 265 210 L 255 210" fill="none" stroke="#2CA02C" stroke-width="2" />
-            <path d="M 240 225 L 240 235 L 320 235 L 320 225" fill="none" stroke="#2CA02C" stroke-width="2" />
-
-            <!-- Nodes -->
-            <!-- Row 1 -->
-            <use href="#node-reg" x="0" y="0" />   <use href="#node-reg" x="80" y="0" />   <use href="#node-dist" x="160" y="0" />   <use href="#node-reg" x="240" y="0" />   <use href="#node-dist" x="320" y="0" />
-            <!-- Row 2 -->
-            <use href="#node-dist" x="0" y="70" /> <use href="#node-dist" x="80" y="70" /> <use href="#node-reg" x="160" y="70" />   <use href="#node-dist" x="240" y="70" /> <use href="#node-reg" x="320" y="70" />
-            <!-- Row 3 -->
-            <use href="#node-dist" x="0" y="140" /> <use href="#node-reg" x="80" y="140" /> <use href="#node-dist" x="160" y="140" /> <use href="#node-reg" x="240" y="140" /> <use href="#node-dist" x="320" y="140" />
-            <!-- Row 4 -->
-            <use href="#node-reg" x="0" y="210" /> <use href="#node-dist" x="80" y="210" /> <use href="#node-reg" x="160" y="210" /> <use href="#node-dist" x="240" y="210" /> <use href="#node-reg" x="320" y="210" />
-
-            <!-- Annotation -->
-            <text x="160" y="265" class="annotation" text-anchor="middle">Adversary cannot predict gaps. Parallel searches succeed.</text>
-        </g>
-
-        <!-- ========================================== -->
-        <!-- LEGEND                                     -->
-        <!-- ========================================== -->
-        <g transform="translate(0, 0)">
-            <!-- Legend Box -->
-            <rect x="280" y="770" width="840" height="45" rx="5" fill="#F9F9F9" stroke="#E0E0E0" stroke-width="1" />
-
-            <!-- Legend Items -->
-            <use href="#node-reg" x="320" y="792" />
-            <text x="340" y="797" class="legend-text">Regular Node</text>
-
-            <use href="#node-dist" x="480" y="792" />
-            <text x="500" y="797" class="legend-text">Distinguished Node</text>
-
-            <path d="M 660 792 L 700 792" fill="none" stroke="#D62728" stroke-width="4" />
-            <text x="710" y="797" class="legend-text">Unbounded Gap (Worst-Case)</text>
-
-            <path d="M 940 792 L 980 792" fill="none" stroke="#2CA02C" stroke-width="4" />
-            <text x="990" y="797" class="legend-text">Bounded Gap (High-Probability)</text>
-        </g>
-    </svg>
+  <!-- ========================================== -->
+  <!-- COLUMN HEADERS                             -->
+  <!-- ========================================== -->
+  <text
+     x="240"
+     y="45"
+     class="col-header"
+     text-anchor="middle"
+     id="text18">DETERMINISTIC SELECTION</text>
+  <text
+     x="1160"
+     y="45"
+     class="col-header"
+     text-anchor="middle"
+     id="text19">RANDOMIZED SELECTION</text>
+  <!-- ========================================== -->
+  <!-- PANEL 1A: Deterministic Left-Block         -->
+  <!-- ========================================== -->
+  <g
+     transform="translate(80, 110)"
+     id="g41">
+    <text
+       x="160"
+       y="-30"
+       class="title"
+       text-anchor="middle"
+       id="text20">1A. Left-Block Pattern</text>
+    <use
+       href="#panel-edges"
+       x="0"
+       y="0"
+       id="use20" />
+    <!-- Adversary Path -->
+    <path
+       d="M 160 0 L 160 210 L 320 210"
+       fill="none"
+       stroke="#D62728"
+       stroke-width="6"
+       stroke-linejoin="round"
+       id="path20" />
+    <!-- Crimson Brackets -->
+    <path
+       d="M 175 0 L 185 0 L 185 210 L 175 210"
+       fill="none"
+       stroke="#D62728"
+       stroke-width="2"
+       id="path21" />
+    <path
+       d="M 160 225 L 160 235 L 320 235 L 320 225"
+       fill="none"
+       stroke="#D62728"
+       stroke-width="2"
+       id="path22" />
+    <!-- Nodes -->
+    <!-- Col 1, 2 (Blue) -->
+    <use
+       href="#node-dist"
+       x="0"
+       y="0"
+       id="use22" />
+    <use
+       href="#node-dist"
+       x="80"
+       y="0"
+       id="use23" />
+    <use
+       href="#node-dist"
+       x="0"
+       y="70"
+       id="use24" />
+    <use
+       href="#node-dist"
+       x="80"
+       y="70"
+       id="use25" />
+    <use
+       href="#node-dist"
+       x="0"
+       y="140"
+       id="use26" />
+    <use
+       href="#node-dist"
+       x="80"
+       y="140"
+       id="use27" />
+    <use
+       href="#node-dist"
+       x="0"
+       y="210"
+       id="use28" />
+    <use
+       href="#node-dist"
+       x="80"
+       y="210"
+       id="use29" />
+    <!-- Col 3, 4, 5 (White) -->
+    <use
+       href="#node-reg"
+       x="160"
+       y="0"
+       id="use30" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="0"
+       id="use31" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="0"
+       id="use32" />
+    <use
+       href="#node-reg"
+       x="160"
+       y="70"
+       id="use33" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="70"
+       id="use34" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="70"
+       id="use35" />
+    <use
+       href="#node-reg"
+       x="160"
+       y="140"
+       id="use36" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="140"
+       id="use37" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="140"
+       id="use38" />
+    <use
+       href="#node-reg"
+       x="160"
+       y="210"
+       id="use39" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="210"
+       id="use40" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="210"
+       id="use41" />
+    <!-- Annotation -->
+    <text
+       x="160"
+       y="265"
+       class="annotation"
+       text-anchor="middle"
+       id="text41">Adversary routes path through unselected block. Gap = <tspan
+   class="math"
+   id="tspan41">Ω(n)</tspan></text>
+  </g>
+  <!-- ========================================== -->
+  <!-- PANEL 1B: Deterministic Row-Alternating    -->
+  <!-- ========================================== -->
+  <g
+     transform="translate(80, 480)"
+     id="g62">
+    <text
+       x="160"
+       y="-30"
+       class="title"
+       text-anchor="middle"
+       id="text42">1B. Row-Alternating Pattern</text>
+    <use
+       href="#panel-edges"
+       x="0"
+       y="0"
+       id="use42" />
+    <!-- Adversary Path -->
+    <path
+       d="M 0 70 L 320 70"
+       fill="none"
+       stroke="#D62728"
+       stroke-width="6"
+       stroke-linejoin="round"
+       id="path42" />
+    <!-- Crimson Brackets -->
+    <path
+       d="M 0 85 L 0 95 L 320 95 L 320 85"
+       fill="none"
+       stroke="#D62728"
+       stroke-width="2"
+       id="path43" />
+    <!-- Nodes -->
+    <!-- Row 1, 3 (Blue) -->
+    <use
+       href="#node-dist"
+       x="0"
+       y="0"
+       id="use43" />
+    <use
+       href="#node-dist"
+       x="80"
+       y="0"
+       id="use44" />
+    <use
+       href="#node-dist"
+       x="160"
+       y="0"
+       id="use45" />
+    <use
+       href="#node-dist"
+       x="240"
+       y="0"
+       id="use46" />
+    <use
+       href="#node-dist"
+       x="320"
+       y="0"
+       id="use47" />
+    <use
+       href="#node-dist"
+       x="0"
+       y="140"
+       id="use48" />
+    <use
+       href="#node-dist"
+       x="80"
+       y="140"
+       id="use49" />
+    <use
+       href="#node-dist"
+       x="160"
+       y="140"
+       id="use50" />
+    <use
+       href="#node-dist"
+       x="240"
+       y="140"
+       id="use51" />
+    <use
+       href="#node-dist"
+       x="320"
+       y="140"
+       id="use52" />
+    <!-- Row 2, 4 (White) -->
+    <use
+       href="#node-reg"
+       x="0"
+       y="70"
+       id="use53" />
+    <use
+       href="#node-reg"
+       x="80"
+       y="70"
+       id="use54" />
+    <use
+       href="#node-reg"
+       x="160"
+       y="70"
+       id="use55" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="70"
+       id="use56" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="70"
+       id="use57" />
+    <use
+       href="#node-reg"
+       x="0"
+       y="210"
+       id="use58" />
+    <use
+       href="#node-reg"
+       x="80"
+       y="210"
+       id="use59" />
+    <use
+       href="#node-reg"
+       x="160"
+       y="210"
+       id="use60" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="210"
+       id="use61" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="210"
+       id="use62" />
+    <!-- Annotation -->
+    <text
+       x="160"
+       y="265"
+       class="annotation"
+       text-anchor="middle"
+       id="text62">Adversary routes path along unselected stripe. Gap = <tspan
+   class="math"
+   id="tspan62">Ω(n)</tspan></text>
+  </g>
+  <!-- ========================================== -->
+  <!-- BASE GRAPH (Center)                        -->
+  <!-- ========================================== -->
+  <g
+     transform="translate(540, 290)"
+     id="g83">
+    <text
+       x="160"
+       y="-30"
+       class="title"
+       text-anchor="middle"
+       id="text63">Base Graph Structure</text>
+    <use
+       href="#panel-edges"
+       x="0"
+       y="0"
+       id="use63" />
+    <!-- All White Nodes -->
+    <use
+       href="#node-reg"
+       x="0"
+       y="0"
+       id="use64" />
+    <use
+       href="#node-reg"
+       x="80"
+       y="0"
+       id="use65" />
+    <use
+       href="#node-reg"
+       x="160"
+       y="0"
+       id="use66" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="0"
+       id="use67" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="0"
+       id="use68" />
+    <use
+       href="#node-reg"
+       x="0"
+       y="70"
+       id="use69" />
+    <use
+       href="#node-reg"
+       x="80"
+       y="70"
+       id="use70" />
+    <use
+       href="#node-reg"
+       x="160"
+       y="70"
+       id="use71" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="70"
+       id="use72" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="70"
+       id="use73" />
+    <use
+       href="#node-reg"
+       x="0"
+       y="140"
+       id="use74" />
+    <use
+       href="#node-reg"
+       x="80"
+       y="140"
+       id="use75" />
+    <use
+       href="#node-reg"
+       x="160"
+       y="140"
+       id="use76" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="140"
+       id="use77" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="140"
+       id="use78" />
+    <use
+       href="#node-reg"
+       x="0"
+       y="210"
+       id="use79" />
+    <use
+       href="#node-reg"
+       x="80"
+       y="210"
+       id="use80" />
+    <use
+       href="#node-reg"
+       x="160"
+       y="210"
+       id="use81" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="210"
+       id="use82" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="210"
+       id="use83" />
+    <!-- Annotation -->
+    <text
+       x="160"
+       y="265"
+       class="annotation"
+       text-anchor="middle"
+       id="text83">The underlying sparse directed grid.</text>
+  </g>
+  <!-- ========================================== -->
+  <!-- PANEL 2A: Randomized Alpha                 -->
+  <!-- ========================================== -->
+  <g
+     transform="translate(1000, 110)"
+     id="g107">
+    <text
+       x="160"
+       y="-30"
+       class="title"
+       text-anchor="middle"
+       id="text84">2A. Random Seed Alpha</text>
+    <use
+       href="#panel-edges"
+       x="0"
+       y="0"
+       id="use84" />
+    <!-- Tested Path -->
+    <path
+       d="M 160 0 L 160 210 L 320 210"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="6"
+       stroke-linejoin="round"
+       id="path84" />
+    <!-- Green Brackets -->
+    <path
+       d="M 175 0 L 185 0 L 185 70 L 175 70"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="2"
+       id="path85" />
+    <path
+       d="M 175 70 L 185 70 L 185 210 L 175 210"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="2"
+       id="path86" />
+    <path
+       d="M 160 225 L 160 235 L 240 235 L 240 225"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="2"
+       id="path87" />
+    <path
+       d="M 240 225 L 240 235 L 320 235 L 320 225"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="2"
+       id="path88" />
+    <!-- Nodes -->
+    <!-- Row 1 -->
+    <use
+       href="#node-dist"
+       x="0"
+       y="0"
+       id="use88" />
+    <use
+       href="#node-reg"
+       x="80"
+       y="0"
+       id="use89" />
+    <use
+       href="#node-reg"
+       x="160"
+       y="0"
+       id="use90" />
+    <use
+       href="#node-dist"
+       x="240"
+       y="0"
+       id="use91" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="0"
+       id="use92" />
+    <!-- Row 2 -->
+    <use
+       href="#node-reg"
+       x="0"
+       y="70"
+       id="use93" />
+    <use
+       href="#node-dist"
+       x="80"
+       y="70"
+       id="use94" />
+    <use
+       href="#node-dist"
+       x="160"
+       y="70"
+       id="use95" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="70"
+       id="use96" />
+    <use
+       href="#node-dist"
+       x="320"
+       y="70"
+       id="use97" />
+    <!-- Row 3 -->
+    <use
+       href="#node-dist"
+       x="0"
+       y="140"
+       id="use98" />
+    <use
+       href="#node-reg"
+       x="80"
+       y="140"
+       id="use99" />
+    <use
+       href="#node-dist"
+       x="160"
+       y="140"
+       id="use100" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="140"
+       id="use101" />
+    <use
+       href="#node-dist"
+       x="320"
+       y="140"
+       id="use102" />
+    <!-- Row 4 -->
+    <use
+       href="#node-reg"
+       x="0"
+       y="210"
+       id="use103" />
+    <use
+       href="#node-dist"
+       x="80"
+       y="210"
+       id="use104" />
+    <use
+       href="#node-reg"
+       x="160"
+       y="210"
+       id="use105" />
+    <use
+       href="#node-dist"
+       x="240"
+       y="210"
+       id="use106" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="210"
+       id="use107" />
+    <!-- Annotation -->
+    <text
+       x="160"
+       y="265"
+       class="annotation"
+       text-anchor="middle"
+       id="text107">Path is fractured. Max gap bounded by <tspan
+   class="math"
+   id="tspan107">Õ((n log n)/s)</tspan></text>
+  </g>
+  <!-- ========================================== -->
+  <!-- PANEL 2B: Randomized Beta                  -->
+  <!-- ========================================== -->
+  <g
+     transform="translate(1000, 480)"
+     id="g134">
+    <text
+       x="160"
+       y="-30"
+       class="title"
+       text-anchor="middle"
+       id="text108">2B. Random Seed Beta</text>
+    <use
+       href="#panel-edges"
+       x="0"
+       y="0"
+       id="use108" />
+    <!-- Tested Path (Snaking) -->
+    <path
+       d="M 0 0 L 80 0 L 80 70 L 160 70 L 160 140 L 240 140 L 240 210 L 320 210"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="6"
+       stroke-linejoin="round"
+       id="path108" />
+    <!-- Green Brackets -->
+    <path
+       d="M 0 -15 L 0 -25 L 80 -25 L 80 -15"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="2"
+       id="path109" />
+    <path
+       d="M 95 0 L 105 0 L 105 70 L 95 70"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="2"
+       id="path110" />
+    <path
+       d="M 80 55 L 80 45 L 160 45 L 160 55"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="2"
+       id="path111" />
+    <path
+       d="M 175 70 L 185 70 L 185 140 L 175 140"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="2"
+       id="path112" />
+    <path
+       d="M 160 125 L 160 115 L 240 115 L 240 125"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="2"
+       id="path113" />
+    <path
+       d="M 255 140 L 265 140 L 265 210 L 255 210"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="2"
+       id="path114" />
+    <path
+       d="M 240 225 L 240 235 L 320 235 L 320 225"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="2"
+       id="path115" />
+    <!-- Nodes -->
+    <!-- Row 1 -->
+    <use
+       href="#node-reg"
+       x="0"
+       y="0"
+       id="use115" />
+    <use
+       href="#node-reg"
+       x="80"
+       y="0"
+       id="use116" />
+    <use
+       href="#node-dist"
+       x="160"
+       y="0"
+       id="use117" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="0"
+       id="use118" />
+    <use
+       href="#node-dist"
+       x="320"
+       y="0"
+       id="use119" />
+    <!-- Row 2 -->
+    <use
+       href="#node-dist"
+       x="0"
+       y="70"
+       id="use120" />
+    <use
+       href="#node-dist"
+       x="80"
+       y="70"
+       id="use121" />
+    <use
+       href="#node-reg"
+       x="160"
+       y="70"
+       id="use122" />
+    <use
+       href="#node-dist"
+       x="240"
+       y="70"
+       id="use123" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="70"
+       id="use124" />
+    <!-- Row 3 -->
+    <use
+       href="#node-dist"
+       x="0"
+       y="140"
+       id="use125" />
+    <use
+       href="#node-reg"
+       x="80"
+       y="140"
+       id="use126" />
+    <use
+       href="#node-dist"
+       x="160"
+       y="140"
+       id="use127" />
+    <use
+       href="#node-reg"
+       x="240"
+       y="140"
+       id="use128" />
+    <use
+       href="#node-dist"
+       x="320"
+       y="140"
+       id="use129" />
+    <!-- Row 4 -->
+    <use
+       href="#node-reg"
+       x="0"
+       y="210"
+       id="use130" />
+    <use
+       href="#node-dist"
+       x="80"
+       y="210"
+       id="use131" />
+    <use
+       href="#node-reg"
+       x="160"
+       y="210"
+       id="use132" />
+    <use
+       href="#node-dist"
+       x="240"
+       y="210"
+       id="use133" />
+    <use
+       href="#node-reg"
+       x="320"
+       y="210"
+       id="use134" />
+    <!-- Annotation -->
+    <text
+       x="160"
+       y="265"
+       class="annotation"
+       text-anchor="middle"
+       id="text134">Adversary cannot predict gaps. Parallel searches succeed.</text>
+  </g>
+  <!-- ========================================== -->
+  <!-- LEGEND                                     -->
+  <!-- ========================================== -->
+  <g
+     transform="translate(0, 0)"
+     id="g138">
+    <!-- Legend Box -->
+    <rect
+       x="280"
+       y="770"
+       width="840"
+       height="45"
+       rx="5"
+       fill="#F9F9F9"
+       stroke="#E0E0E0"
+       stroke-width="1"
+       id="rect134" />
+    <!-- Legend Items -->
+    <use
+       href="#node-reg"
+       x="320"
+       y="792"
+       id="use135" />
+    <text
+       x="340"
+       y="797"
+       class="legend-text"
+       id="text135">Regular Node</text>
+    <use
+       href="#node-dist"
+       x="480"
+       y="792"
+       id="use136" />
+    <text
+       x="500"
+       y="797"
+       class="legend-text"
+       id="text136">Distinguished Node</text>
+    <path
+       d="M 660 792 L 700 792"
+       fill="none"
+       stroke="#D62728"
+       stroke-width="4"
+       id="path136" />
+    <text
+       x="710"
+       y="797"
+       class="legend-text"
+       id="text137">Unbounded Gap (Worst-Case)</text>
+    <path
+       d="M 940 792 L 980 792"
+       fill="none"
+       stroke="#2CA02C"
+       stroke-width="4"
+       id="path137" />
+    <text
+       x="990"
+       y="797"
+       class="legend-text"
+       id="text138">Bounded Gap (High-Probability)</text>
+  </g>
+</svg>
